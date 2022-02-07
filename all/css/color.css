@@ -123,13 +123,13 @@ input[type=range] {
         width: 100%;
     }
     input[type="range"] {
-        width: 10%;
+        width: 30%;
     }
     #r,
     #g,
     #b,
     #hexval{
-        width: 10%;
+        width: 30%;
         text-align: center;
     }
      #color {
