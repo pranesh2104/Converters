@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Energy Conversion</title>
+    <style>
+        body {
+            /* background: url(energy2.jpg)no-repeat center/cover fixed; */
+            background-image: radial-gradient(circle, #f27d71, #f47268, #f6675f, #f75b56, #f84d4d);
+        }
+        
+        .container {
+            color: black;
+            box-shadow: 0 4px 80px #fd521e;
+        }
+        
+        a:hover {
+            color: #fd521e;
+        }
+        
+        .btn:hover {
+            background-color: #fd521e;
+        }
+        
+        #base:hover,
+        .rs:hover {
+            border: 3px solid #fd521e;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Energy Conversion</h1>
+    <form autocomplete="off">
+        <div class="container">
+            <div class="select">
+                <div class="choose">
+                    <p>From</p>
+                    <select name="from" id="from">
+                <option value="wh">watt(W)</option>
+                <option value="kwh">kilowatt(kW)</option>
+                <option value="j">joules(J)</option>
+                <option value="kj"> kilojoules(kJ)</option>
+                </select>
+                    <p>To</p>
+                    <select id="to">
+                    <option value="j">joules(J)</option>
+                    <option value="kj"> kilojoules(kJ)</option>
+                    <option value="kwh">kilowatt(kW)</option>
+                    <option value="wh">watt(W)</option>
+            </select>
+                </div>
+                <br>
+                <p id="enter">Enter the Energy here:</p>
+                <input type="text" id="base">
+
+                <p>Result:</p>
+                <div class="rs">
+                    <div id="result"></div>
+                </div>
+
+                <button type="button" id="submit" class="btn">Convert</button><br>
+                <a href="https://www.rapidtables.com/convert/energy/index.html">For More Energy Conversions</a>
+
+            </div>
+
+        </div>
+    </form>
+    <script src="js/energy.js"></script>
+
+</body>
+
+</html>
