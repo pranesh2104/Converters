@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Stack Convertion</title>
+    <style>
+        body {
+            /* background: url(stack1.png)no-repeat center/cover fixed; */
+            background-image: radial-gradient(circle, #e391d8, #de7bdb, #d664e0, #ca4ce7, #ba31ef);
+        }
+        
+        h1 {
+            color: #fff;
+        }
+        
+        #base:hover,
+        .rs:hover {
+            border: 3px solid rgb(231, 26, 231);
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            background-color: rgb(187, 34, 187);
+        }
+        
+        .container {
+            backdrop-filter: blur(3px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Stack Conversion</h1>
+    <form autocomplete="off">
+        <div class="container">
+            <div class="select">
+                <div class="choose">
+                    <p>From</p>
+                    <select name="from" id="from">
+                        <option value="inf">Infix</option>
+                        <option value="pr">Prefix</option>
+                        <option value="po">Postfix</option>
+                    </select>
+                    <p>To</p>
+                    <select id="to">  
+                        <option value="pr" selected="selected">Prefix</option>
+                        <option value="inf">Infix</option> 
+                        <option value="po">Postfix</option>
+                    </select>
+                </div>
+                <br>
+                <p id="enter">Enter the Base here:</p>
+                <input type="text" id="base">
+
+                <p>Result:</p>
+                <div class="rs">
+                    <div id="result"></div>
+                </div>
+
+                <button type="button" id="submit" class="btn">Convert</button><br>
+            </div>
+
+        </div>
+    </form>
+    <script src="js/stack.js"></script>
+
+</body>
+
+</html>
