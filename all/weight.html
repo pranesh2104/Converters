@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <title>Weight Conversion</title>
+    <style>
+        body {
+            /* background: url(weight1.jpg)no-repeat center/cover fixed; */
+            background-image: radial-gradient(circle, #b87478, #c9676c, #d7595e, #e4484f, #ef313d);
+        }
+        
+        #base:hover,
+        .rs:hover {
+            border: 3px solid rgb(221, 41, 41);
+            border-radius: 5px;
+        }
+        
+        .container {
+            box-shadow: 0 4px 8px #e92929;
+            border: none;
+            backdrop-filter: blur(2px);
+            color: #000;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        a {
+            color: #000;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        .btn:hover {
+            background-color: rgb(187, 34, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Weight Conversion</h1>
+    <form autocomplete="off">
+        <div class="container">
+            <div class="select">
+                <div class="choose">
+                    <p>From</p>
+                    <select name="from" id="from">
+                <option value="kg">Kilogram(kg)</option>
+                <option value="g">Gram(g)</option>
+                <option value="lb">Pound(lb)</option>
+                </select>
+                    <p>To</p>
+                    <select id="to">
+                <option value="g">Gram(g)</option>
+                <option value="kg">Kilogram(kg)</option> 
+                <option value="lb">Pound(lb)</option>
+
+            </select>
+                </div>
+                <br>
+                <p id="enter">Enter the Weight here:</p>
+                <input type="text" id="base">
+                <p>Result:</p>
+                <div class="rs">
+                    <div id="result"></div>
+                </div>
+                <button type="button" id="submit" class="btn">Convert</button><br>
+                <a href="https://www.rapidtables.com/convert/weight/index.html"> For More Weight Conversions</a>
+            </div>
+
+        </div>
+    </form>
+    <script src="js/weight.js"></script>
+
+</body>
+
+</html>
