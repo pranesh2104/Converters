@@ -59,9 +59,9 @@ input {
 
 #color {
     border: 2px solid black;
-    width: 10%;
+    width: 25%;
     height: 40px;
-    margin-left: 45%;
+    margin-left: 38%;
     background-color: #fff;
 }
 
@@ -127,9 +127,15 @@ input[type=range] {
     }
     #r,
     #g,
-    #b {
+    #b,
+    #hexval{
         width: 10%;
         text-align: center;
+    }
+     #color {
+        width: 25%;
+        align-items: center;
+        justify-content: center;
     }
     .explaination {
         font-size: 20px;
