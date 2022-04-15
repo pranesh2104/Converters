@@ -31,14 +31,14 @@ document.getElementById("submit").onclick = function() {
 
             var base = Number(document.getElementById("base").value);
 
-            document.getElementById("result").innerHTML = base + " Wh" + " = " + base / 1000 + " kW";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base / 1000 + " kWh";
 
         }
         //watt to watt
         else if (to_id == "watt-hour(Wh)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " Wh" + " = " + base + " W";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base + " Wh";
 
         }
 
