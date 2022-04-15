@@ -10,68 +10,68 @@ document.getElementById("submit").onclick = function() {
     console.log(to_id)
 
     //Watt To ALl 
-    if (from_id == "watt(W)") {
+    if (from_id == "watt-hour(Wh)") {
 
         //watt to Joules
         if (to_id == "joules(J)") {
 
             var base = Number(document.getElementById("base").value);
 
-            document.getElementById("result").innerHTML = base + " W" + " = " + base + " J/s";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base + " J/s";
         }
         //watt to Kilojoules
         else if (to_id == "kilojoules(kJ)") {
 
             var base = Number(document.getElementById("base").value);
 
-            document.getElementById("result").innerHTML = base + " W" + " = " + base / 1000 + " kJ/s";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base / 1000 + " kJ/s";
         }
         //watt to kilowatt
-        else if (to_id == "kilowatt(kW)") {
+        else if (to_id == "kilowatt-hour(kWh)") {
 
             var base = Number(document.getElementById("base").value);
 
-            document.getElementById("result").innerHTML = base + " W" + " = " + base / 1000 + " kW";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base / 1000 + " kW";
 
         }
         //watt to watt
-        else if (to_id == "watt(W)") {
+        else if (to_id == "watt-hour(Wh)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " W" + " = " + base + " W";
+            document.getElementById("result").innerHTML = base + " Wh" + " = " + base + " W";
 
         }
 
     }
     //kilowatt to all
-    else if (from_id == "kilowatt(kW)") {
+    else if (from_id == "kilowatt-hour(kWh)") {
 
         //kilowatt to kilowatt
-        if (to_id == "kilowatt(kW)") {
+        if (to_id == "kilowatt-hour(kWh)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " kW" + " = " + base + " kW";
+            document.getElementById("result").innerHTML = base + " kWh" + " = " + base + " kWh";
 
         }
         //kilowatt to watt
-        else if (to_id == "watt(W)") {
+        else if (to_id == "watt-hour(W)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " kW" + " = " + base * 1000 + " W";
+            document.getElementById("result").innerHTML = base + " kWh" + " = " + base * 1000 + " Wh";
 
         }
         //kilowatt to joules
         else if (to_id == "joules(J)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " kW" + " = " + base * 1000 + " J/s";
+            document.getElementById("result").innerHTML = base + " kWh" + " = " + base * 1000 + " J/s";
 
         }
 
         //kilowatt to kilojoules
         else if (to_id == "kilojoules(kJ)") {
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " kW" + " = " + base + " kJ/s";
+            document.getElementById("result").innerHTML = base + " kWh" + " = " + base + " kJ/s";
 
 
         }
@@ -85,12 +85,12 @@ document.getElementById("submit").onclick = function() {
             document.getElementById("result").innerHTML = base + " J" + " = " + base + " J";
         }
         //joules to watt
-        else if (to_id == "watt(W)") {
+        else if (to_id == "watt-hour(Wh)") {
             var base = Number(document.getElementById("base").value);
             document.getElementById("result").innerHTML = base + " J" + " = " + base * 0.0002777778 + " Wh";
         }
         //joules to kilowatt
-        else if (to_id == "kilowatt(kW)") {
+        else if (to_id == "kilowatt-hour(kWh)") {
             var base = Number(document.getElementById("base").value);
             document.getElementById("result").innerHTML = base + " J" + " = " + parseFloat(base / 3600000).toFixed(12) + " kWh";
         }
@@ -114,15 +114,15 @@ document.getElementById("submit").onclick = function() {
             document.getElementById("result").innerHTML = base + " kJ" + " = " + base * 1000 + " J";
         }
         //kilojoules to watt
-        else if (to_id == "watt(W)") {
+        else if (to_id == "watt-hour(Wh)") {
             var base = Number(document.getElementById("base").value);
             document.getElementById("result").innerHTML = base + " kJ" + " = " + base * 0.277778 + " Wh";
         }
         //kilojoules to kilowatt
-        else if (to_id == "kilowatt(kW)") {
+        else if (to_id == "kilowatt-hour(kWh)") {
 
             var base = Number(document.getElementById("base").value);
-            document.getElementById("result").innerHTML = base + " kJh" + " = " + parseFloat(base * 0.0002777778).toFixed(12) + " kW";
+            document.getElementById("result").innerHTML = base + " kJ" + " = " + parseFloat(base * 0.0002777778).toFixed(12) + " kWh";
         }
     }
 }
